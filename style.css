@@ -15,50 +15,65 @@ header{
 .col-sm-8{
 	background-color: white;
 	margin-right: auto;
-    margin-left: auto;
-    padding: 0px;
+  margin-left: auto;
+  padding: 0px;
 }
 
 /* row-addItem */
-	.row-addItem{
-		height: 55px;
-		display: flex;
-		align-items: center;
-	    border-bottom: 2px solid #eaeaea;
-	    padding: 0px 12px;
-	}
+.row-addItem{
+	height: 55px;
+	display: flex;
+	align-items: center;
+  border-bottom: 2px solid #eaeaea;
+  padding: 0px 12px;
+}
 
-	.form-control{
-		border-radius:0px;
-		width: 100%;
-		border:0px;
-		box-sizing: border-box;
-		padding: 0px;
-	}
-	.form-control::placeholder{
-		color: #ccc;
-		    font-size: 1rem;
-	    font-style: italic;
-	}
-	.form-control:focus{
-		border-bottom: 1px solid #ccc;
-	}
+.form-control{
+	border-radius:0px;
+	width: 100%;
+	border:0px;
+	box-sizing: border-box;
+	padding: 0px;
+}
+.form-control::-webkit-input-placeholder {
+  color: #ccc;
+  font-size: 1rem;
+  font-style: italic;
+}
+.form-control:-ms-input-placeholder {
+  color: #ccc;
+  font-size: 1rem;
+  font-style: italic;
+}
+.form-control::-ms-input-placeholder {
+  color: #ccc;
+  font-size: 1rem;
+  font-style: italic;
+}
+.form-control::placeholder {
+  color: #ccc;
+  font-size: 1rem;
+  font-style: italic;
+}
+.form-control:focus{
+	border-bottom: 1px solid #ccc;
+}
 
-	#btn-add {
-	    width: 2.2rem;
-	    height: 2.2rem;
-	    color:#ccc;
-	    background-color: white;
-	    line-height: 0; 
-	    border: none;
-	    border-radius: 50%;
-	    padding: 0px;
-	    margin: 0px;
-	}
-	#btn-add:hover{
-		color: #92a9c3;
-		background-color: #e6ecf1;
-	}
+#btn-add {
+  width: 2.2rem;
+  height: 2.2rem;
+  color:#ccc;
+  background-color: white;
+  line-height: 0; 
+  border: none;
+  border-radius: 50%;
+  padding: 0px;
+  margin: 0px;
+}
+#btn-add:hover{
+	color: #92a9c3;
+	background-color: #e6ecf1;
+}
 
 
 /* list */
@@ -68,12 +83,11 @@ header{
 }
 
 #noItem {
-	display: none;
-    text-align: center;
-    line-height: 160px;
-    font-style: italic;
-    font-size: 1.5rem;
-    color: #eaeaea;
+  text-align: center;
+  line-height: 160px;
+  font-style: italic;
+  font-size: 1.5rem;
+  color: #eaeaea;
 }
 
 .row-item{
@@ -89,13 +103,13 @@ header{
 }
 .btn-delete{
 	width: 10%;
-    text-align: center;
+  text-align: center;
 	font-size: 1rem;
 	color: #eaeaea;
 	display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 	border-bottom: 1px solid #eaeaea;
 }
 .input-text:hover{ 
@@ -131,13 +145,10 @@ nav div span{
 	color:#ccc;
 }
 
-nav div span:hover , #show{
+nav div span:hover , .show{
 	color: #92a9c3;
-    font-weight: 900;
+  font-weight: 900;
 }
-
-
-
 
 .form-control:focus,
 textarea:hover, 
@@ -153,7 +164,9 @@ label:focus,
 .btn:active,
 .btn.active
 {
-	box-shadow:none !important;
-    outline:none !important;
-    -webkit-appearance:none;
+  box-shadow: none !important;
+  outline: none !important;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
