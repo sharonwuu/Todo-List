@@ -28,7 +28,6 @@ $(document).ready(function () {
 	}
 
 	function render(page){ 
-console.log(page)
 		$('.row-addItem input').val('').attr('placeholder','What needs to be done?')
 	  $('.listBlock').empty()
 		$('nav > span').html(`${list.length} items left`)
